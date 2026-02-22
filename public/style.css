@@ -1,0 +1,96 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Full screen body with nice background */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #333;
+}
+
+/* Container with card style */
+.container {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Heading style */
+.container h1 {
+  margin-bottom: 20px;
+  color: #2575fc;
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #2575fc;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-group button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #2575fc;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  transition: background 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #6a11cb;
+}
+
+/* Task list */
+#taskList {
+  list-style: none;
+  text-align: left;
+}
+
+#taskList li {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+#taskList li button {
+  background: none;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#taskList li button:hover {
+  color: darkred;
+}
